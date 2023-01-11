@@ -147,17 +147,15 @@ public class Robot extends TimedRobot {
   }
 
   private void Surus() {
-    double donushizi = m_leftStick.getRawAxis(0);
-    double hiz = m_leftStick.getRawAxis(1);
     if (m_joystick.getRawButton(1)) {
-      m_frontRightMotor.set(hiz * 0.75);
+      m_frontRightMotor.set(0.75);
 
     }
     else{
       m_frontRightMotor.set(0);
     }
     if (m_joystick.getRawButton(2)) {
-      m_frontRightMotor.set(hiz * -0.75);
+      m_frontRightMotor.set(-0.75);
 
     }
     m_frontRightMotor.set(0);
